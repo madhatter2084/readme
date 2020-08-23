@@ -48,5 +48,5 @@ inquirer.prompt([
     message: "",
     },
 ]).then(function(data){
-    generateREADME(data);
+    generateMarkdown(data);
 })
