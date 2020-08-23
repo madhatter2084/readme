@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const generateREADME = require("./generateMarkdown")
+const generateMarkdown = require("./generateMarkdown")
 
 inquirer.prompt([
     {
@@ -41,12 +41,8 @@ inquirer.prompt([
     type: "input",
     name: "profile",
     message: "Link your GitHub profile",
-    },
-    {
-    type: "input",
-    name: "title",
-    message: "",
-    },
+    }
+  
 ]).then(function(data){
     generateMarkdown(data);
 })
